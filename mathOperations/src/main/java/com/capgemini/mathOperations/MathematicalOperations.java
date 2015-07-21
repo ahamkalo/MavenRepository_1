@@ -25,4 +25,8 @@ public class MathematicalOperations {
 		return base;
 	}
 
+	public static Double substract(Double num1, Double num2) {
+		return num1 - num2;
+	}
+
 }

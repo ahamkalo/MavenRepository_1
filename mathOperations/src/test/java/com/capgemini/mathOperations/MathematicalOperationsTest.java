@@ -28,8 +28,9 @@ public class MathematicalOperationsTest {
 
 	@Test
 	public void shouldReturn0() {
-		assertEquals((Integer)0, MathematicalOperations.multiply(0, 5));
+		assertEquals((Integer) 0, MathematicalOperations.multiply(0, 5));
 	}
+
 	@Test
 	public void PowerTestShoulfReturn_4_For_2_2() {
 		assertEquals(4, MathematicalOperations.powerOf(2, 2));
@@ -38,6 +39,11 @@ public class MathematicalOperationsTest {
 	@Test
 	public void PowerTestShoulfReturn_0_For_0_6() {
 		assertEquals(0, MathematicalOperations.powerOf(0, 6));
+	}
+
+	@Test
+	public void shouldReturn0for6_6() {
+		assertTrue((new Double(0)).equals(MathematicalOperations.substract(new Double(6), new Double(6))));
 	}
 
 }
